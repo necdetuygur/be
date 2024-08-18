@@ -12,7 +12,7 @@ docker compose up -d
 
 ```js
 let headersList = {
-  Accept: "*/*",
+  "Content-Type": "application/json",
 };
 
 let bodyContent = JSON.stringify({
