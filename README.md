@@ -1,4 +1,8 @@
 ```sh
+git clone git@github.com:necdetuygur/be.git
+
+cd be
+
 docker stop be-db-1
 docker stop be-node-1
 docker stop be-admin-1
