@@ -21,15 +21,8 @@ services:
     working_dir: /app
     volumes:
       - .:/app
-    command: ["npx", "nodemon", "index.js"]
+    command: /bin/sh -c "npm install && npm start"
     depends_on:
       - db
     ports:
       - "3000:3000"
-    environment:
-      DB_USER: ${DB_USER}
-      DB_PASSWORD: ${DB_PASSWORD}
-      DB_HOST: ${DB_HOST}
-      DB_DATABASE: ${DB_DATABASE}
-      DB_PORT: ${DB_PORT}
-      PORT: ${PORT}
