@@ -32,4 +32,6 @@ let response = await fetch("http://localhost:3000/todos", {
 
 let data = await response.text();
 console.log(data);
+
+// Or test with Todos.postman_collection.json
 ```
